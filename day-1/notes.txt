@@ -3,11 +3,11 @@ Width defaults to auto/100%
 
 Avoid fixed widths/heights!
 
-Instead we should use % or scaling values for widths
+Instead we should use %, dvh, dvw, etc. NOT REMs/EMs!
 
 
 Lesson-02: Percentages on the child
-CSS by default tries is best not to lose info. That is why when a child is bigger than it's parent IT WILL OVERFLOW. Happens frequently with lots of text! Which is another reason we should avoid fixed widths/heights.
+CSS by default tries is best not to lose info. That is why when a child is bigger than it's parent IT WILL OVERFLOW. Happens frequently with lots of text! Also images. Which is another reason we should avoid fixed widths/heights.
 
 If we set 50% on a child it is 50% of it's parent element. So if parent is 200px, 50% would be 100px. It's always a relationship between the parent and child.
 
@@ -15,6 +15,19 @@ Because of that we usually don't set widths on child elements.
 
 
 Lesson-03: Why it's a good idea to avoid heights
+
+It's us that ruins the responsiveness of the web. Default CSS is naturally responsive OUR CSS rules is what messes up responsiveness. Anytime we run into an issue with CSS it's OUR Fault!
+
+USE PADDING IN EMs INSTEAD OF HEIGHT if we want to add size to our containers.
+
+Em font-size is relative to it's parent 1st and scopes chain upwards. And they compound/multiply on top of each other!
+
+Em for anything besides font-size (like margin/padding/height/etc.) only relates to it's immediate element's font-size and doesn't compound. EMs are VARIABLE! Great for buttons/variants. Button-small.
+Useful for padding.
+
+REM just uses the root font-size. So it's look at the html{} or ::root{} BUT NOT body{}. REMs are CONSISTENT! Useful for spacing.
+
+Default font size for browsers is 16px.
 
 This is a general rule. There are times when you want to use height, but for the most part, they cause more issues than they solve.
 
