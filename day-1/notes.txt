@@ -1,0 +1,23 @@
+Lesson-01: Percentages vs Fixed widths
+Width defaults to auto/100% 
+
+Avoid fixed widths/heights!
+
+Instead we should use % or scaling values for widths
+
+
+Lesson-02: Percentages on the child
+CSS by default tries is best not to lose info. That is why when a child is bigger than it's parent IT WILL OVERFLOW. Happens frequently with lots of text! Which is another reason we should avoid fixed widths/heights.
+
+If we set 50% on a child it is 50% of it's parent element. So if parent is 200px, 50% would be 100px. It's always a relationship between the parent and child.
+
+Because of that we usually don't set widths on child elements. 
+
+
+Lesson-03: Why it's a good idea to avoid heights
+
+This is a general rule. There are times when you want to use height, but for the most part, they cause more issues than they solve.
+
+It's very rare that I ever use height, and we'll see why in this lesson.
+
+Em vs rem - https://youtu.be/_-aDOAMmDHI
