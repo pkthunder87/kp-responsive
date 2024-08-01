@@ -1,4 +1,5 @@
 Lesson-01: Percentages vs Fixed widths
+
 Width defaults to auto/100% 
 
 Avoid fixed widths/heights!
@@ -7,6 +8,7 @@ Instead we should use %, dvh, dvw, etc. NOT REMs/EMs!
 
 
 Lesson-02: Percentages on the child
+
 CSS by default tries is best not to lose info. That is why when a child is bigger than it's parent IT WILL OVERFLOW. Happens frequently with lots of text! Also images. Which is another reason we should avoid fixed widths/heights.
 
 If we set 50% on a child it is 50% of it's parent element. So if parent is 200px, 50% would be 100px. It's always a relationship between the parent and child.
@@ -33,4 +35,15 @@ This is a general rule. There are times when you want to use height, but for the
 
 It's very rare that I ever use height, and we'll see why in this lesson.
 
+Exceptions: Smaller elements like icons, etc.
+
 Em vs rem - https://youtu.be/_-aDOAMmDHI
+
+
+Day 2
+
+Why not to use EMs for font-sizes:
+EMs compounds on each other
+
+When to use EMs:
+For margins and paddings, very useful in button variants
