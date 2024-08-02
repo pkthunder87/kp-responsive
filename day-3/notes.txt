@@ -1,0 +1,7 @@
+Day 3
+
+Lesson-01: Adding in a max-width
+
+Use a max-width to limit the size of elements. It allows shrinkage.
+Use width with % for an ideal size.
+Almost always avoid using min-width it's anti-responsive!
