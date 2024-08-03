@@ -30,11 +30,11 @@ body {
 }
 
 .intro-content {
-  max-width: 32%;
-  margin-left: 20%;
+  max-width: 54%;
 }
 
-.more-content {
-  max-width: 60%;
+.frame {
+  max-width: 750px;
   margin: 0 auto;
+  padding-inline: 2rem;
 }

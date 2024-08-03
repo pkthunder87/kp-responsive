@@ -5,3 +5,11 @@ Lesson-01: Adding in a max-width
 Use a max-width to limit the size of elements. It allows shrinkage.
 Use width with % for an ideal size.
 Almost always avoid using min-width it's anti-responsive!
+
+
+Day 4
+
+CSS Units: vh, vw, vmin, vmax
+https://www.youtube.com/watch?v=IWFqGsXxJ1E&t=13s
+vmin uses the smaller of vh & vw
+vmax uses the bigger of vh & vw
