@@ -13,3 +13,12 @@ CSS Units: vh, vw, vmin, vmax
 https://www.youtube.com/watch?v=IWFqGsXxJ1E&t=13s
 vmin uses the smaller of vh & vw
 vmax uses the bigger of vh & vw
+
+Day 5
+Challenge #2 - Solution
+Common patter for width
+A general width which is always a %
+A max width in Rem
+A margin 0 auto; for centering
+
+
