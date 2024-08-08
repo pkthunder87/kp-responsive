@@ -1,5 +1,0 @@
-Day 8
-
-An introduction to flexbox
-
-If you have 2+ flex items and 1 of them has shorter content than the others. You can add width: 100%; to the flex items to make sure they share the same size.

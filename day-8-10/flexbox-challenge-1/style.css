@@ -56,27 +56,6 @@ h1 {
   gap: var(--gap);
 }
 
-.row .col h2 {
-  color: #87629a;
-}
-
-.box-2 .col {
-  color: white;
-  width: 100%;
-}
-
-.box-2 {
-  display: flex;
-  background-color: #136c72;
-  text-align: center;
-  gap: var(--gap);
-}
-
-.col {
-  /* these are now flex items */
-  width: 100%;
-}
-
 .hero {
   padding: 100px 0;
   background-color: #23424a;
@@ -89,6 +68,25 @@ h1 {
 
 .hero p {
   margin-bottom: 3em;
+}
+
+.three-col {
+  padding-block: 3em;
+}
+
+.three-col h2 {
+  color: #87629a;
+}
+
+.two-col {
+  padding-block: 3em;
+  background-color: #136c72;
+  color: white;
+}
+
+.col {
+  /* these are now flex items */
+  width: 100%;
 }
 
 .btn {
