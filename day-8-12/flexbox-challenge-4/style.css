@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3125rem;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header__box {
+  max-width: 70%;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+}
+
+.header__subtitle {
+  font-weight: 300;
+  font-size: 1.125rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #222c2a;
+}
+
+.header__title {
+  font-weight: 900;
+  color: #824936;
+  font-size: 3.75rem;
+}
+
+.container {
+  max-width: 70.5rem;
+  /* border: 3px solid yellow; */
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+.header {
+  background: #f3eed9;
+  min-height: 41.25rem;
+}
+
+.features > * .container {
+  display: flex;
+
+  padding-block: 6rem;
+  color: white;
+  flex-wrap: wrap;
+
+  /* border: 2px solid red; */
+}
+
+.container--left {
+  width: 47%;
+  /* border: 2px solid green; */
+}
+
+.container--right {
+  margin-left: 6%;
+  width: 47%;
+  /* border: 2px solid blue; */
+}
+
+.features-text {
+  background: white;
+  min-height: 30vh;
+}
+
+.features-text__title {
+  color: #824936;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 900;
+  width: 100%;
+  flex-shrink: 0;
+  margin-bottom: 2rem;
+}
+
+.features-text__text {
+  display: flex;
+  color: #222c2a;
+}
+
+.features-img__title {
+  color: #f3eed9;
+}
+
+.features-img .container {
+  flex-wrap: nowrap;
+  padding-block: 4rem;
+}
+
+.features-img--green {
+  background: #222c2a;
+}
+
+.features-img--brown {
+  background: #824936;
+}
+
+.features-img__img {
+  width: 100%;
+}

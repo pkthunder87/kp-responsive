@@ -58,6 +58,8 @@ h1 {
 .row {
   display: flex;
   justify-content: space-between;
+
+  /* border: 2px solid white; */
 }
 
 .col {
@@ -74,6 +76,24 @@ header {
   padding: 1em 0;
 }
 
+.logo {
+  margin-right: 1em;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+
+  /* border: 2px solid red; */
+}
+
+/* Unknown item amount and last two link items moved to the right */
+/* .nav__list li:nth-last-child(2) {
+  margin-left: auto;
+} */
+
 .nav__list {
   margin: 0;
   padding: 0;
@@ -82,6 +102,11 @@ header {
   display: flex;
   gap: 1.2em;
   flex-wrap: wrap;
+  /* border: 2px solid red; */
+}
+
+.nav__list--primary {
+  margin: 0 auto;
 }
 
 .nav__link {
