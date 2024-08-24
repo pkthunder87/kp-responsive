@@ -8,6 +8,9 @@ Avoid fixed widths/heights!
 
 Instead we should use %, dvh, dvw, etc. NOT REMs/EMs!
 
+Divs/elements with no content have no width/height!
+So for empty divs u must explicitly give them height/width/padding.
+
 
 Lesson-02: Percentages on the child
 

@@ -16,7 +16,7 @@ vmax uses the bigger of vh & vw
 
 Day 5
 Challenge #2 - Solution
-Common patter for width
+Common pattern for width:
 A general width which is always a %
 A max width in Rem
 A margin 0 auto; for centering

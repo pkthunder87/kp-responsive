@@ -1,0 +1,87 @@
+Day 15
+
+Lesson 01: Media query basics
+Why we need media queries?
+Let us add or override existing styles that only target specific conditions
+
+Code not in media queries is default, in queries = add/override
+
+A media queries can specify media features & type(print, display, etc.)
+
+min-width = Mobile 1st = at least 600px or bigger
+max-width = Desktop 1st = at most 600px or smaller
+can be combined with and = between
+
+Media queries order IS important!
+
+If using mobile 1st/min-width
+uses ascending order, smaller 1st
+
+If using desktop 1st/max-width
+uses descending order
+
+
+Day 16
+Lesson 01: How do decide what breakpoints to use?
+When does my layout start to fail/becomes broken?
+Do have different breakpoints between each section!
+Breakpoints should be for the entire page!
+
+Don't kill yourself with having 10 different breakpoints
+Don't overthink it!
+Should only have a handful, ~2-4?
+
+Try to use the minimal amount of breakpoints you need to have a nice looking and functional layout
+
+IT DOESN'T HAVE TO BE PERFECT FOR EVERY DEVICE/SCREEN SIZE!
+
+AND IT DOESN'T HAVE TO BE PIXEL PERFECT!
+
+Also don't target specific devices
+
+Just get a general idea of when site is breaking and add breakpoints there! 
+
+https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
+
+The tl;dr of the article: Use 600px, 900px, 1200px, and 1800px if you plan on giving the giant-monitor people something special.
+
+1. Get your breakpoints right
+2. Name your ranges sensibly
+3. Be declarative
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+// usage
+.my-box {
+  padding: 10px;
+
+  @include for-desktop-up {
+    padding: 20px;
+  }
+}
+
+5 Breakpoints for types of devices: Phones, tablets, laptops, desktops, Large desktop
+
+
+Will start to get a feel of when things usually break, like at 600px, 900px, etc.
+
+
+Day 17
+The meta viewport tag
+Always include the viewport device meta tag in HTML head
+
+! shortcut auto includes it

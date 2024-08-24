@@ -1,0 +1,72 @@
+/* =============
+   Start of reset 
+   ============= */
+
+/* 
+A reset by:
+https://piccalil.li/blog/a-more-modern-css-reset/
+Also made some adjustments for my own needs  
+*/
+
+/* Box sizing rules */
+/* Remove initial margins */
+/* Apply font smoothing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* Prevent font size inflation */
+/* Simplifies rem calculations */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-size: 62.5%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+}
+
+/* Remove list styles */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* =============
+   End of reset 
+   ============= */

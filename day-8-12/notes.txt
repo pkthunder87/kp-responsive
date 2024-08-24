@@ -6,7 +6,7 @@ If you have 2+ flex items and 1 of them has shorter content than the others. You
 
 Day 9
 
-We can add add row to container div to have less HTML. 
+We can add row to container div to have less HTML. 
      <div class="container row">
 So container is mostly for widths/BG, etc. and the row is just for flex/justify/etc.. Keep their CSS rules SEPARATE!
 
@@ -16,7 +16,7 @@ Column widths and flexbox
 WORTH REWATCHING!
 If there is no content flex-items will try to shrink down to their smallest possible size. That's why width: 100% items will try to shrink/grow at the same ratio.
 
-If we have leftover/empty space horizontally, items content width doesn't add up to 100%, we can control that space with justify-content. Same with align-content but with vertical left-over/empty space.
+If we have leftover/empty space horizontally, and items content width doesn't add up to 100%, we can control that space with justify-content. Same with align-content but with vertical left-over/empty space.
 
 Flexbox Challenge #2
 Having 1 central class="container row" class to control multiple sections/divs is a great way to lineup responsive layouts. Like making our hero image and sidebar lineup and size match perfectly! 
