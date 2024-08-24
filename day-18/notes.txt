@@ -1,0 +1,13 @@
+Day 18
+Flexbox Challenge #4 solution - Writing mobile-first CSS
+
+Should start with reset and typography first!
+
+On type it's useful to remove the margins. Especially margin-top:
+h1, h2 {
+    margin-top: 0;
+    OR
+    margin: 0;
+}
+
+Prefer mobile 1st because without worrying about layouts. We can just focus on the basics: typography, spacing, color scheme, etc.
