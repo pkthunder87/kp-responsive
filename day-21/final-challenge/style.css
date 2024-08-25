@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  /*Box model stuff*/
+  margin: 0;
+  /*Miscellaneous*/
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /*Box model stuff*/
+  min-height: 100vh;
+  /*Typography stuff*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  /*Miscellaneous*/
+  font-optical-sizing: auto;
+
+  background: slategray;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+  color: var(--neutral-dark-blue);
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Remove list styles */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+section {
+  margin-top: 5rem;
+}
+
+.footer {
+  margin-top: 5rem;
+}
+
+.nav {
+  margin-top: 2rem;
+}
