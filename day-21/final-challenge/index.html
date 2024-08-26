@@ -17,11 +17,13 @@
   </head>
   <body>
     <header class="header">
-      <div class="container row">
-        <a href="#" class="nav__img"
-          ><img src="img/logo.svg" alt="CRL Logo"
-        /></a>
         <nav class="nav">
+          <div class="container row">
+          <a class="nav__logo" href="#" 
+          ><img src="img/logo.svg" alt="CRL Logo"
+        />
+      </a>
+      <div class="nav__group">
           <ul class="nav__list nav__list--primary">
             <li class="nav__item"><a href="#">Home</a></li>
             <li class="nav__item"><a href="#">About</a></li>
@@ -29,11 +31,14 @@
           </ul>
           <ul class="nav__list nav__list--secondary">
             <li class="nav__item"><a href="#">Sign In</a></li>
-            <li class="nav__item"><a href="#">Sign Up</a></li>
+            <li class="nav__item nav__btn"><a href="#">Sign Up</a></li>
           </ul>
+        </div>
+        </div>
         </nav>
 
         <section class="hero">
+          <div class="container row">
           <h1 class="hero__title">
             Responsive layouts don&apos;t have to be a struggle
           </h1>
@@ -42,12 +47,13 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <a class="hero_cta" href="#">I want to learn</a>
+        </div>
         </section>
-      </div>
     </header>
 
-    <main class="main container row">
-      <section class="section-one">
+    <main class="main">
+      <section class="section-one ">
+        <div class="container row">
         <h3 class="section-one__title">Mobile-first</h3>
         <p class="section-one__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -68,9 +74,11 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam.
         </p>
+      </div>
       </section>
 
-      <section class="section-two">
+      <section class="section-two ">
+        <div class="container row">
         <h3 class="section-two__title">It doesn&apos;t have to be so hard</h3>
         <p class="section-two__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -117,6 +125,7 @@
             </p>
           </div>
         </aside>
+      </div>
       </section>
 
       <footer class="footer">
