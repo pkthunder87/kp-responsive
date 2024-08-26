@@ -1,11 +1,19 @@
+/* =============
+   CSS Properties 
+   ============= */
+
 :root {
   --nav-bg: #2e323f;
   --dark-bg: #3b4050;
   --beige-bg: #6f737f;
   --white-bg: #ffffff;
   --title-color: #a59678;
-  --text-on-dark-color: #6f737f;
+  --text-on-dark-color: #f1f1f1;
 }
+
+/* =============
+   Start of reset 
+   ============= */
 
 *,
 *::before,
@@ -21,12 +29,6 @@
 
 html {
   font-size: 56%;
-}
-
-@media (min-width: 700px) {
-  html {
-    font-size: 62.5%;
-  }
 }
 
 body {
@@ -49,7 +51,7 @@ h2,
 h3,
 h4 {
   text-wrap: balance;
-  color: var(--neutral-dark-blue);
+  color: var(--title-color);
 
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 700;
@@ -63,6 +65,26 @@ ul,
 ol {
   list-style: none;
 }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* =============
+   Links 
+   ============= */
 
 a {
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -82,31 +104,19 @@ a:visited {
   color: var(--white-bg);
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.footer {
-}
+/* =============
+   Header 
+   ============= */
 
 .nav {
-  background: var(--nav-bg);
   padding-block: 1em;
 
   align-items: center;
   font-size: 1.8rem;
+
+  &.nav--top {
+    background: var(--nav-bg);
+  }
 }
 
 .nav > .container {
@@ -137,18 +147,6 @@ select {
   padding: 0.25em 1em;
   background: var(--title-color);
   border-radius: 100px;
-}
-
-.container {
-  width: 90%;
-  max-width: 120rem;
-  /* background: #fff; */
-
-  margin: 0 auto;
-}
-
-.footer {
-  background: var(--dark-bg);
 }
 
 .nav__item {
@@ -199,16 +197,107 @@ select {
   }
 }
 
-/* Sections */
+/* =============
+   Main Sections 
+   ============= */
+
 .section-one {
-  background: yellow;
+  background: var(--text-on-dark-color);
+  text-align: center;
+  text-wrap: balance;
+
+  padding-block: 3.2em;
+
+  .section-one__title {
+    font-size: 3rem;
+  }
+
+  .section-one__text {
+    font-size: 1.8rem;
+    margin-block-end: 2.5rem;
+
+    color: var(--dark-bg);
+  }
 }
 
 .section-two {
-  background: green;
+  background: var(--white-bg);
+
+  padding-block: 2.5em;
+
+  .section-two__title {
+    font-size: 3.6rem;
+    margin-block-end: 2rem;
+  }
+
+  .section-two__text {
+    font-size: 2.1rem;
+    margin-block-end: 2.5rem;
+
+    color: var(--dark-bg);
+  }
+
+  .section-two__img {
+    margin-block-end: 4rem;
+  }
 }
 
+/* =============
+   Aside 
+   ============= */
+
+.aside {
+  text-align: center;
+  text-wrap: balance;
+
+  .aside-box {
+    padding-block: 3rem;
+    padding-inline: 2.7rem;
+    background: var(--dark-bg);
+    margin-block-end: 2rem;
+
+    .aside-box__title {
+      color: var(--white-bg);
+      font-size: 4rem;
+      margin-block-end: 3rem;
+    }
+
+    .aside-box__text {
+      color: var(--text-on-dark-color);
+      font-size: 3rem;
+    }
+  }
+}
+
+/* =============
+   Footer 
+   ============= */
+
+.footer {
+  background: var(--dark-bg);
+}
+
+/* =============
+   Wrappers 
+   ============= */
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  /* background: #fff; */
+
+  margin: 0 auto;
+}
+
+/* =============
+   Media Queries 
+   ============= */
+
 @media (min-width: 700px) {
+  html {
+    font-size: 62.5%;
+  }
+
   body {
     background-color: violet;
   }
