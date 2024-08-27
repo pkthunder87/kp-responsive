@@ -1,2 +1,5 @@
 Day 21
 Always re-watch the 1st half of the recap video!
+
+Final Challenge
+Instead of disabling flex-shrink, or using width max-content on flex items we can just turn flex wrap on. That way our flex items won't shrink too small and break our design. Works really well for our nav items and logo during the final challenge.
