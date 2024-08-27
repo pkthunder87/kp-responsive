@@ -3,3 +3,11 @@ Always re-watch the 1st half of the recap video!
 
 Final Challenge
 Instead of disabling flex-shrink, or using width max-content on flex items we can just turn flex wrap on. That way our flex items won't shrink too small and break our design. Works really well for our nav items and logo during the final challenge.
+
+We used this to crop the image. For some reason image height with a % didn't work so we used vw.
+Object fit: cover; Made it so aspect ratio wasn't blurry/unfocused.
+
+    height: 30vw;
+    width: 100%;
+
+    object-fit: cover;
