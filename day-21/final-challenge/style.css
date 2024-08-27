@@ -367,4 +367,34 @@ a:visited {
       }
     }
   }
+
+  .footer {
+    .container {
+      .footer_cols {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .nav__list {
+          padding: 0;
+
+          flex-direction: column;
+        }
+
+        .cols--0 {
+          grid-column: span 3;
+          width: 60%;
+          margin-block-end: 2rem;
+        }
+
+        .cols--1 {
+          grid-column: span 3;
+          width: 65%;
+        }
+
+        .cols--text {
+          margin-block-end: 2rem;
+        }
+      }
+    }
+  }
 }
