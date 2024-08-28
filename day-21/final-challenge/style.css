@@ -1,5 +1,21 @@
 /* =============
-   CSS Properties 
+   ToC 
+
+   1. CSS Properties 
+   2. Reset
+   3. Links 
+   4. Header
+   5. Main Sections 
+   6. Aside 
+   7. Footer 
+   8. Wrappers 
+   9. Media Queries
+   10. 700px - 999px
+   11. 1000px+ 
+   ============= */
+
+/* =============
+   1. CSS Properties 
    ============= */
 
 :root {
@@ -12,7 +28,7 @@
 }
 
 /* =============
-   Start of reset 
+   2. Reset 
    ============= */
 
 *,
@@ -81,7 +97,7 @@ select {
 }
 
 /* =============
-   Links 
+   3. Links 
    ============= */
 
 a {
@@ -103,7 +119,7 @@ a:visited {
 }
 
 /* =============
-   Header 
+   4. Header 
    ============= */
 
 .nav {
@@ -196,7 +212,7 @@ a:visited {
 }
 
 /* =============
-   Main Sections 
+   5. Main Sections 
    ============= */
 
 .section-one {
@@ -254,7 +270,7 @@ a:visited {
 }
 
 /* =============
-   Aside 
+   6. Aside 
    ============= */
 
 .aside {
@@ -281,7 +297,7 @@ a:visited {
 }
 
 /* =============
-   Footer 
+   7. Footer 
    ============= */
 
 .footer {
@@ -327,7 +343,7 @@ a:visited {
 }
 
 /* =============
-   Wrappers 
+   8. Wrappers 
    ============= */
 
 .container {
@@ -339,11 +355,11 @@ a:visited {
 }
 
 /* =============
-   Media Queries 
+   9. Media Queries 
    ============= */
 
 /* =============
-   700px - 999px
+   10. 700px - 999px
    ============= */
 @media (min-width: 700px) {
   html {
@@ -425,7 +441,7 @@ a:visited {
 }
 
 /* =============
-   1000px+
+   11. 1000px+
    ============= */
 
 @media (min-width: 1000px) {
